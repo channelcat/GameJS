@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+// +----------------------------------------------------------------------+ 
+// | Copyright (c) 2010                                                   | 
+// +----------------------------------------------------------------------+ 
+// | This source file is bound by United States copyright law.            | 
+// +----------------------------------------------------------------------+ 
+// | Author: Michael Hill [channelcat@gmail.com]                          | 
+// +----------------------------------------------------------------------+ 
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Framework</title>
+		
+		<!-- Load the external libraries first -->
+		<script type="text/javascript" src="libraries/external/mootools.js"></script>
+		
+		<!-- Load the game framework -->
+		<script type="text/javascript" src="libraries/framework/GameFrame.js"></script>
+		<script type="text/javascript" src="libraries/framework/Game.js"></script>
+		<script type="text/javascript" src="libraries/framework/Asset.js"></script>
+		<script type="text/javascript" src="libraries/framework/SpriteSheetAsset.js"></script>
+		<script type="text/javascript" src="libraries/framework/SoundAsset.js"></script>
+		<script type="text/javascript" src="libraries/framework/Input.js"></script>
+		<script type="text/javascript" src="libraries/framework/Sprite.js"></script>
+		<script type="text/javascript" src="libraries/framework/State.js"></script>
+		<script type="text/javascript" src="libraries/framework/states/loading.js"></script>
+		
+		<!-- Load the example game -->
+		<script type="text/javascript" src="libraries/example/Example.js"></script>
+		<script type="text/javascript" src="libraries/example/config.js"></script>
+		<script type="text/javascript" src="libraries/example/assets.js"></script>
+		<script type="text/javascript" src="libraries/example/states/title.js"></script>
+		
+		<!-- Instanciate the game -->
+		<script>
+			window.onload = function(){ new Example( document.getElementById("game-instance") ); }
+		</script>
+	</head>
+	<body>
+		<canvas id="game-instance" width="640" height="480"></canvas>
+	</body>
+</html>
