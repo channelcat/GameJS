@@ -6,8 +6,8 @@
 // | Author: Michael Hill <channelcat@gmail.com>                          | 
 // +----------------------------------------------------------------------+ 
 
-Game.SpriteAsset = new Class({
-	Extends: Game.Asset,
+Game.Asset.Sprite = new Class({
+	Extends: Game.Asset.Base,
 	
 	type: Game.Asset.TYPE_SPRITE_SHEET,
 	_frameRects: [],

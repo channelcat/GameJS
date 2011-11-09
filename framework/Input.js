@@ -78,8 +78,8 @@ Game.Input = new Class({
 	{
 		this._triggerEvent( Game.Input.MouseInput.LEFT_CLICK, { 
 			type: Game.Input.METHOD_MOUSE,
-			x: e.x - this.game.canvas.offsetLeft, 
-			y: e.y - this.game.canvas.offsetTop, 
+			x: e.clientX - this.game.canvas.offsetLeft, 
+			y: e.clientY - this.game.canvas.offsetTop, 
 			active: true 
 		});
 		//console.log( "Mouse " + e.x + "," + e.y );

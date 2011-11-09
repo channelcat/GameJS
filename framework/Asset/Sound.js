@@ -6,8 +6,8 @@
 // | Author: Michael Hill <channelcat@gmail.com>                          | 
 // +----------------------------------------------------------------------+ 
 
-Game.SoundAsset = new Class({
-	Extends: Game.Asset,
+Game.Asset.Sound = new Class({
+	Extends: Game.Asset.Base,
 	
 	type: Game.Asset.TYPE_SOUND,
 	
